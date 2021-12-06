@@ -1,9 +1,35 @@
+* {
+    background-color: white;
+}
 
-.navlist {
+.App {
     display: flex;
     flex-direction: row;
 }
 
 .navlist li {
     list-style: none; 
+    display: inline;
+    margin-left: 5%;
+}
+
+.navlist {
+   text-decoration: none;
+}
+
+.books-main {
+  margin-top: 10%;
+  margin-left: -20%;
+}
+
+#form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 800px;
+  height: 30px;
+}
+
+#book-title {
+    width: 550px;
 }

@@ -5,8 +5,8 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import Book from './redux/books/books';
-import Categories from './redux/categories/categories';
+import Bookpage from './components/bookpage';
+import Categories from './components/categoriespage';
 import './App.css';
 
 function App() {
@@ -14,23 +14,21 @@ function App() {
     <Router>
 
       <div className="App">
-        <div>
-          <h1>Bookstore CMS</h1>
-          <nav className="navlist">
-            <ul>
-              <li>
-                <Link to="/">Books</Link>
-              </li>
-              <li>
-                <Link to="/categories">Categories</Link>
-              </li>
-            </ul>
-          </nav>
-          <Routes>
-            <Route path="/" element={<Book />} />
-            <Route path="/categories" element={<Categories />} />
-          </Routes>
-        </div>
+        <h1>Bookstore CMS</h1>
+        <nav className="navlist">
+          <ul>
+            <li>
+              <Link to="/">Books</Link>
+            </li>
+            <li>
+              <Link to="/categories">Categories</Link>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Bookpage />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
       </div>
     </Router>
   );
