@@ -1,20 +1,20 @@
 * {
-    background-color: white;
+  background-color: white;
 }
 
 .App {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .navlist li {
-    list-style: none; 
-    display: inline;
-    margin-left: 5%;
+  list-style: none;
+  display: inline;
+  margin-left: 5%;
 }
 
 .navlist {
-   text-decoration: none;
+  text-decoration: none;
 }
 
 .books-main {
@@ -31,5 +31,5 @@
 }
 
 #book-title {
-    width: 550px;
+  width: 550px;
 }
