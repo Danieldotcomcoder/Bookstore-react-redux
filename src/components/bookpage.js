@@ -8,17 +8,7 @@ function Bookpage() {
       <h2>Add a New Book</h2>
       <form id="form">
         <input id="book-title" type="text" name="Title" placeholder="Book Title" />
-        <select placeholder="Category">
-          <option>
-            Category
-          </option>
-          <option>
-            option 1
-          </option>
-          <option>
-            option 2
-          </option>
-        </select>
+        <input id="book-author" type="text" name="Title" placeholder="Book Author" />
         <button type="submit"> Add a Book </button>
       </form>
     </div>
