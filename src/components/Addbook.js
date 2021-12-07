@@ -27,7 +27,7 @@ const AddBook = (props) => {
   return (
     <form onSubmit={onSubmit}>
       <input id="book-title" type="text" name="title" placeholder="Book Title" value={addnewBook.title} onChange={onChange} required />
-      <input type="text" name="author" placeholder="Book Author" value={addnewBook.author} onChange={onChange} required />
+      <input id="book-author" type="text" name="author" placeholder="Book Author" value={addnewBook.author} onChange={onChange} required />
       <button type="submit">Add Book</button>
     </form>
   );
