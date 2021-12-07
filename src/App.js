@@ -12,7 +12,6 @@ import './App.css';
 function App() {
   return (
     <Router>
-
       <div className="App">
         <h1>Bookstore CMS</h1>
         <nav className="navlist">

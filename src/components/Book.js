@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Book = ({ id, title, author }) => (
-  <li key={id}>
+const Book = ({ title, author, deleteBook }) => (
+  <li>
     <h4>{title}</h4>
     <h4>{author}</h4>
-    <button type="button"> Remove </button>
+    <button type="button" onClick={deleteBook}> Remove </button>
   </li>
 );
 
 Book.propTypes = {
-  id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
+  deleteBook: PropTypes.func.isRequired,
 };
 
 export default Book;
