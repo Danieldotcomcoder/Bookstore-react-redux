@@ -11,7 +11,7 @@ const BooksList = () => {
 
   const dispatch = useDispatch();
 
-  const submitBookToStore = ({ title, author }) => {
+  const AddBookToStorage = ({ title, author }) => {
     const newBook = {
       id: uuidv4(),
       title,
@@ -44,7 +44,7 @@ const BooksList = () => {
         ))}
       </ul>
 
-      <AddBook addBook={submitBookToStore} />
+      <AddBook addBook={AddBookToStorage} />
     </div>
   );
 };
