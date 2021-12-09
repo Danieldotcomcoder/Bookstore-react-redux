@@ -18,8 +18,8 @@
 }
 
 .books-main {
-  margin-top: 10%;
-  margin-left: -20%;
+  margin-top: 5%;
+  margin-left: -30%;
 }
 
 #form {
@@ -45,7 +45,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #0290ff;
+  color: #008bf5;
 }
 
 .Books {
@@ -61,25 +61,133 @@
   height: 1rem;
   font-family: Montserrat;
   font-size: 1rem;
-  letter-spacing: 1.9px;
   color: #121212;
   text-decoration: none;
 }
 
 .List {
-  border: 1px solid black;
-  margin-top: 1%;
+  border: 1px solid lightslategray;
+  margin-top: 2%;
   list-style: none;
+  width: 1100px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sect-one {
+  width: 40%;
+  height: 150px;
+}
+
+.sect-two {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+}
+
+.sect-two-o {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1%;
+}
+
+.sect-three {
+  width: 30%;
+  margin-left: 10%;
 }
 
 .book-title {
-  width: 12.313rem;
-  height: 1.813rem;
-  margin: 0.188rem 20.188rem 0 0;
+  width: 100%;
   font-family: RobotoSlab;
   font-size: 1.375rem;
-  font-weight: bold;
+  font-weight: bolder;
   letter-spacing: -0.2px;
+  color: #121212;
+  position: relative;
+  bottom: 20%;
+  margin-left: 2%;
+}
+
+.class-btns {
+  border: 1px solid transparent;
+  color: #0290ff;
+  cursor: pointer;
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 30%;
+  margin-left: 2%;
+}
+
+.book-author {
+  color: #0290ff;
+  font-weight: 100;
+  position: relative;
+  bottom: 30%;
+  font-size: 1rem;
+  margin-left: 2%;
+}
+
+.category {
+  color: gray;
+  font-size: 1rem;
+  position: relative;
+  bottom: 10%;
+  margin-left: 2%;
+}
+
+.circle {
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.percentage {
+  width: 4.25rem;
+  height: 2.438rem;
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-family: Montserrat;
+  font-size: 2rem;
+  letter-spacing: normal;
+  color: #121212;
+  margin-top: 15%;
+}
+
+.completed {
+  color: rgb(128, 128, 128);
+  font-size: 1rem;
+  font-weight: 100;
+  margin-left: 3%;
+}
+
+#btns-comnts {
+  border-right: 1px solid rgb(182, 182, 182);
+  padding-right: 3%;
+}
+
+#btns-remv {
+  border-right: 1px solid rgb(181, 182, 182);
+  padding-right: 3%;
+}
+
+.current-chapter {
+  opacity: 0.5;
+  font-family: RobotoSlab;
+  font-size: 1rem;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
   color: #121212;
 }
 
+.update-progress {
+  width: 11.5rem;
+  height: 2.063rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+  cursor: pointer;
+}
