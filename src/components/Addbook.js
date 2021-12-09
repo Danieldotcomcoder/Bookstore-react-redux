@@ -20,10 +20,11 @@ export default function AddBook() {
   };
   return (
     <div>
+      <h2 className="add-n-book">ADD NEW BOOK</h2>
       <form id="form" onSubmit={(e) => Onsubmit(e)}>
         <input id="title" placeholder="Book Title" className="title-name" required />
         <input id="category" placeholder="Category" className="category-name" required />
-        <button type="submit"> Add Book </button>
+        <button type="submit" className="Add-book-btn"> ADD BOOK </button>
       </form>
     </div>
   );

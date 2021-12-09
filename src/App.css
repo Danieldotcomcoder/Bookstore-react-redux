@@ -22,16 +22,44 @@
   margin-left: -30%;
 }
 
+.title-name {
+  width: 1000px;
+}
+
+.category-name {
+  width: 100px;
+  margin-left: 5%;
+}
 #form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 600px;
+  width: 100%;
   height: 30px;
 }
 
-#book-title {
-  width: 250px;
+.title-name {
+  width: 60%;
+  margin-left: 3%;
+  border: 1px solid gray;
+  height: 30px;
+}
+
+.category-name {
+  margin-left: -5%;
+  border: 1px solid gray;
+  height: 30px;
+}
+
+.Add-book-btn {
+  width: 11.5rem;
+  height: 2.063rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+  cursor: pointer;
 }
 
 .Bookstore-CMS {
@@ -50,7 +78,7 @@
 
 .Books {
   font-family: Montserrat;
-  font-size: 1rem;
+  font-size: 1.3rem;
   letter-spacing: 1.9px;
   color: #121212;
   text-decoration: none;
@@ -60,7 +88,7 @@
   margin-left: 10%;
   height: 1rem;
   font-family: Montserrat;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #121212;
   text-decoration: none;
 }
@@ -190,4 +218,9 @@
   font-size: 1rem;
   font-weight: 100;
   cursor: pointer;
+}
+
+.add-n-book {
+  margin-left: 4%;
+  color: gray;
 }
