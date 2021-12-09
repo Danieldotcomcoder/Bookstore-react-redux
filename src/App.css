@@ -22,14 +22,6 @@
   margin-left: -30%;
 }
 
-.title-name {
-  width: 1000px;
-}
-
-.category-name {
-  width: 100px;
-  margin-left: 5%;
-}
 #form {
   display: flex;
   flex-direction: row;
@@ -39,7 +31,7 @@
 }
 
 .title-name {
-  width: 60%;
+  width: 50%;
   margin-left: 3%;
   border: 1px solid gray;
   height: 30px;
@@ -64,10 +56,9 @@
 
 .Bookstore-CMS {
   width: 15rem;
-  height: 2.313rem;
   margin-left: 5%;
-  font-family: Montserrat;
-  font-size: 1.875rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -77,7 +68,7 @@
 }
 
 .Books {
-  font-family: Montserrat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.3rem;
   letter-spacing: 1.9px;
   color: #121212;
@@ -87,7 +78,7 @@
 .Categories {
   margin-left: 10%;
   height: 1rem;
-  font-family: Montserrat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.3rem;
   color: #121212;
   text-decoration: none;
@@ -127,7 +118,7 @@
 
 .book-title {
   width: 100%;
-  font-family: RobotoSlab;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.375rem;
   font-weight: bolder;
   letter-spacing: -0.2px;
@@ -173,7 +164,7 @@
   width: 4.25rem;
   height: 2.438rem;
   margin: 0.063rem 5.75rem 0 0.688rem;
-  font-family: Montserrat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2rem;
   letter-spacing: normal;
   color: #121212;
@@ -199,7 +190,7 @@
 
 .current-chapter {
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   font-weight: 200;
   font-stretch: normal;
