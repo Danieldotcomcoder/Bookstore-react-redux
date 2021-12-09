@@ -1,40 +1,30 @@
-/* eslint-disable react/destructuring-assignment */
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { addBooktoapi } from '../redux/books/books';
 
-const AddBook = (props) => {
-  const [addnewBook, setAddBook] = useState({
-    title: '',
-    author: '',
-  });
-
-  const onChange = (e) => {
-    setAddBook({
-      ...addnewBook,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const onSubmit = (e) => {
+export default function AddBook() {
+  const dispatch = useDispatch();
+  const Onsubmit = (e) => {
     e.preventDefault();
-    props.addBook(addnewBook);
-    setAddBook({
-      title: '',
-      author: '',
-    });
+    const title = e.target.querySelector('.title-name');
+    const category = e.target.querySelector('.category-name');
+    const newbook = {
+      item_id: uuidv4(),
+      title: title.value,
+      category: category.value,
+    };
+    title.value = '';
+    category.value = '';
+    dispatch(addBooktoapi(newbook));
   };
-
   return (
-    <form onSubmit={onSubmit}>
-      <input id="book-title" type="text" name="title" placeholder="Book Title" value={addnewBook.title} onChange={onChange} required />
-      <input id="book-author" type="text" name="author" placeholder="Book Author" value={addnewBook.author} onChange={onChange} required />
-      <button type="submit">Add Book</button>
-    </form>
+    <div>
+      <form id="form" onSubmit={(e) => Onsubmit(e)}>
+        <input id="title" placeholder="Book Title" className="title-name" required />
+        <input id="category" placeholder="Category" className="category-name" required />
+        <button type="submit"> Add Book </button>
+      </form>
+    </div>
   );
-};
-
-AddBook.propTypes = {
-  addBook: PropTypes.func.isRequired,
-};
-
-export default AddBook;
+}
