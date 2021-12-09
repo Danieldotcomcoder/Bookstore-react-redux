@@ -8,8 +8,8 @@ export default function Book({ book }) {
   const dispatch = useDispatch();
   return (
     <li>
-      <span>{` ${book.title} `}</span>
-      <span>{` ${book.category} `}</span>
+      <h4>{` ${book.title} `}</h4>
+      <h4>{` ${book.category} `}</h4>
       <button type="button" onClick={() => dispatch(removeBookfromapi(book.item_id))}>Remove book</button>
     </li>
   );
