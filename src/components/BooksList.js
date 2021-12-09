@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import Book from './Book';
 
-const BooksPage = () => {
+const BooksList = () => {
   const bookList = useSelector((state) => state.books);
   return (
     <div>
@@ -13,4 +13,4 @@ const BooksPage = () => {
     </div>
   );
 };
-export default BooksPage;
+export default BooksList;
