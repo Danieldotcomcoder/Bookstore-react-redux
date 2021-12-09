@@ -8,12 +8,14 @@ import {
 import Bookpage from './components/bookpage';
 import Categories from './components/categoriespage';
 import './App.css';
+import img from './images/123.png';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <h1 className="Bookstore-CMS">Bookstore CMS</h1>
+        <img className="img" alt="img" src={img} />
         <nav className="navlist">
           <ul>
             <li>
