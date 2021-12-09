@@ -1,30 +1,19 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/books/books';
+import { removeBookfromapi } from '../redux/books/books';
 
-const Book = ({ book }) => {
+export default function Book({ book }) {
   const dispatch = useDispatch();
-
-  const deleteBook = (id) => {
-    dispatch(removeBook(id));
-  };
-
   return (
-    <li key={book.item_id}>
-      <p>{book.title}</p>
-      <p>{book.category}</p>
-      <button type="button" onClick={deleteBook(book.item_id)}>Remove</button>
+    <li>
+      <span>{` ${book.title} `}</span>
+      <span>{` ${book.category} `}</span>
+      <button type="button" onClick={() => dispatch(removeBookfromapi(book.item_id))}>Remove book</button>
     </li>
   );
-};
-
+}
 Book.propTypes = {
-  book: PropTypes.shape({
-    item_id: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    category: PropTypes.string.isRequired,
-  }).isRequired,
+  book: PropTypes.object.isRequired,
 };
-
-export default Book;

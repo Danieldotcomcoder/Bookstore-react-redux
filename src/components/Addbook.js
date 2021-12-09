@@ -1,35 +1,30 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { addBooktoapi } from '../redux/books/books';
 
-const AddBook = () => {
+export default function AddBook() {
   const dispatch = useDispatch();
-  const [title, setInputTitle] = useState('');
-  const [category, setInputCategory] = useState('');
-
-  const onTitleChange = (e) => setInputTitle((e.target.value));
-  const onCategoryChange = (e) => setInputCategory((e.target.value));
-
-  const OnSubmit = (e) => {
+  const Onsubmit = (e) => {
+    e.preventDefault();
+    const title = e.target.querySelector('.title-name');
+    const category = e.target.querySelector('.category-name');
     const newbook = {
       item_id: uuidv4(),
-      title,
-      category,
+      title: title.value,
+      category: category.value,
     };
-    dispatch(addBook(newbook));
-    e.preventDefault();
-    setInputTitle('');
-    setInputCategory('');
+    title.value = '';
+    category.value = '';
+    dispatch(addBooktoapi(newbook));
   };
-
   return (
-    <form onSubmit={OnSubmit}>
-      <input type="text" name="title" placeholder="Book Title" value={title} onChange={onTitleChange} required />
-      <input type="text" name="category" placeholder="Category" value={category} onChange={onCategoryChange} required />
-      <button type="submit">Add Book</button>
-    </form>
+    <div>
+      <form id="form" onSubmit={(e) => Onsubmit(e)}>
+        <input id="title" placeholder="Book Title" className="title-name" required />
+        <input id="category" placeholder="Category" className="category-name" required />
+        <button type="submit"> Add Book </button>
+      </form>
+    </div>
   );
-};
-
-export default AddBook;
+}
