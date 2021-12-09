@@ -13,14 +13,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h1>Bookstore CMS</h1>
+        <h1 className="Bookstore-CMS">Bookstore CMS</h1>
         <nav className="navlist">
           <ul>
             <li>
-              <Link to="/">Books</Link>
+              <Link to="/" className="Books">Books</Link>
             </li>
             <li>
-              <Link to="/categories">Categories</Link>
+              <Link to="/categories" className="Categories">Categories</Link>
             </li>
           </ul>
         </nav>
