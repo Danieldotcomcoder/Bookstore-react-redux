@@ -25,6 +25,8 @@ To get a running local copy follow these simple example steps:
                            2-  npm run build.
                            3-  npm start. 
 
+## Live Demo 
+https://kind-swartz-d80c22.netlify.app/
 ## Author
 👤 Daniel Shdeed
 
