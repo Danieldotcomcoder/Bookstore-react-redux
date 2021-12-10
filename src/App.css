@@ -1,4 +1,4 @@
-* {
+body {
   background-color: white;
 }
 
@@ -136,6 +136,7 @@
   position: relative;
   bottom: 30%;
   margin-left: 2%;
+  background-color: white;
 }
 
 .book-author {
@@ -213,7 +214,7 @@
 
 .add-n-book {
   margin-left: 4%;
-  color: gray;
+  color: #888888;
 }
 
 .img {
